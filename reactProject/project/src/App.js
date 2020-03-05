@@ -3,7 +3,6 @@ import Tabs from './components/Tabs.js'
 import dict from './functions/funcs.js'
 import './App.css';
 import './Slider.css';
-import table2 from './functions/randomTable.js'
 
 class App extends Component {
   constructor(props) {
@@ -15,7 +14,7 @@ class App extends Component {
     let tmp2 = new Date("08/03/2015");
     let index=Math.round((tmp1.getTime()-tmp2.getTime())/(7*24*60*60*1000))-2;
     this.state={
-      index, monthMessage:"", height:0, id:0, sort:0, isNight:false, activeConnection:false, table2
+      index, monthMessage:"", height:0, id:0, sort:0, isNight:false, activeConnection:false
     };
     this.openWS();
   }
@@ -73,7 +72,6 @@ class App extends Component {
       <div className={this.state.isNight ? 'nightMode' : 'dayMode'}>
         <Tabs
           table={this.state.table}
-          table2={this.state.table2}
           cellChange = {this.cellChange}
           editRow={this.editRow}
           keyDown={this.keyDown}
