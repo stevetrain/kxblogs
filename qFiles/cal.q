@@ -43,4 +43,4 @@ createCal:{
  };
 
 //createCal only needs run if a fresh calendar is needed
-//createCal();
+createCal();
