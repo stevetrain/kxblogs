@@ -1,0 +1,119 @@
+body {font-family: Arial;}
+
+.header-month {width:55px}
+.header-date {width:26px}
+
+.nightMode {
+    color: #fff;
+    background-color: #121212f5;
+}
+
+.dayMode {
+    background-color: white;
+}
+
+.foreground {
+    color: #fff;
+    background-color: #000000;
+}
+
+.tab-selected {background-color:red}
+
+.nightMode .highlight {
+	color:yellow;
+}
+
+.dayMode .highlight {
+	color:#005499;
+}
+
+.highlight {
+    font-weight:700
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+	text-align:center;
+    table-layout: fixed;
+}
+
+.table>tbody>tr>td,.table>tfoot>tr>td,.table>thead>tr>td {
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    word-wrap:break-word;
+    height: 60px
+}
+
+.table>tbody+tbody {
+    border-top: 2px solid #ddd
+}
+
+thead {
+	display: table-header-group
+}
+
+.snackbar {
+    position: fixed;
+    z-index: 1;
+    left: 40%;
+    bottom: 52%;
+    font-size: 55px;
+    text-align:center;
+}
+
+.pointer {
+	cursor:pointer;
+}
+
+[ng-disabled="true"]{
+	opacity:0.5;
+	pointer-events:none;
+}
+
+[ng-click]:not(.disabled){
+	cursor:pointer
+}
+
+.icon {
+	background: #242a42;
+	border: #242a42;
+	color: white;
+	font-size: 18px;
+}
+
+#myRadio {
+  padding:1%;
+}
+
+.myTable {
+    width:600px;
+}
+
+.myTable td, .myTable th {
+  text-align:left;
+}
+
+md-nav-bar.md-default-theme .md-button._md-nav-button.md-unselected, md-nav-bar .md-button._md-nav-button.md-unselected {
+    color: #ffffffad;
+    text-transform:none;
+}
+
+.md-button.md-default-theme.md-accent, .md-button.md-accent {
+    color: white;
+        text-transform:none;
+}
+
+.dayMode md-nav-bar .md-nav-bar, .dayMode .tabbar {
+  background: #0070cd;
+}
+
+.nightMode md-nav-bar .md-nav-bar, .nightMode .tabbar {
+    background: #121212f5;
+}
+
+.loader {
+    margin-top: 10%;
+    margin-left: 20%;
+}

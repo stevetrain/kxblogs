@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <title>AngularJS App</title>
+    <meta name="description" content="AngularJS App">
+    <meta name="author" content="Stephen Trainor">
+    <!-- Original sources
+    <link rel="stylesheet" href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0-rc.5/angular-material.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://material.angularjs.org/1.1.0-rc.5/docs.css">
+    <link data-require="angular-material@1.1.0" data-semver="1.1.0" rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css" />
+    <script data-require="angular.js@1.5.x" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js" data-semver="1.5.11"></script>
+    <script data-require="angular-animate@1.5.5" data-semver="1.5.5" src="//code.angularjs.org/1.5.5/angular-animate.js"></script>
+    <script data-require="angular-aria@1.5.5" data-semver="1.5.5" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script data-require="angular-messages@1.5.5" data-semver="1.5.5" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+    <script data-require="angular-material@1.1.0" data-semver="1.1.0" src="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <script src="//code.angularjs.org/1.5.11/angular-route.js"></script>
+    <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/angular-bootstrap-toggle@0.4.0/dist/angular-bootstrap-toggle.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/angular-bootstrap-toggle@0.4.0/dist/angular-bootstrap-toggle.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+    <!-- Downloaded files -->
+    <!-- AngularJS -->
+    <link rel="stylesheet" href="../AngularJS/angular-material.css">
+    <link rel="stylesheet" href="../AngularJS/Material_Icons.css">
+    <link rel="stylesheet" href="../AngularJS/docs.css">
+    <link rel="stylesheet" data-require="angular-material@1.1.0" data-semver="1.1.0" href="../AngularJS/angular-material.min.css">
+    <link rel="stylesheet" href="../AngularJS/angular-bootstrap-toggle.min.css">
+    <link rel="stylesheet" href="../AngularJS/bootstrap-combined.min.css">
+    <script data-require="angular.js@1.5.x" src="../AngularJS/angular.min.js" data-semver="1.5.11"></script>
+    <script data-require="angular-animate@1.5.5" data-semver="1.5.5" src="../AngularJS/angular-animate.js"></script>
+    <script data-require="angular-aria@1.5.5" data-semver="1.5.5" src="../AngularJS/angular-aria.min.js"></script>
+    <script data-require="angular-messages@1.5.5" data-semver="1.5.5" src="../AngularJS/angular-messages.min.js"></script>
+    <script data-require="angular-material@1.1.0" data-semver="1.1.0" src="../AngularJS/angular-material.min.js"></script>
+    <script src="../AngularJS/angular-route.js"></script>
+    <script src="../AngularJS//ui-bootstrap-tpls-0.2.0.js"></script>
+    <script src="../AngularJS/angular-bootstrap-toggle.min.js"></script>
+    <!-- jQuery -->
+    <script src="../jQuery/jquery-3.3.1.js"></script>
+    <!-- My files -->
+    <link rel="icon" href="../kx.jpeg">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <script src="../js/index.js"></script>
+    <script src="../js/tab0.js"></script>
+    <script src="../js/tab1.js"></script>
+</head>
+<body class="dayMode">
+    <div style="display:flex">
+        <span style="flex:9">
+            <md-nav-bar md-selected-nav-item="website.currentNavItem" nav-bar-aria-label="navigation links">
+                <md-nav-item></md-nav-item>
+                <md-nav-item  md-nav-href="#/" name="tab0" value="tab0">Calendar</md-nav-item>
+                <md-nav-item  md-nav-href="#/otherTab" name="tab1" value="tab1">OtherTab</md-nav-item>
+            </md-nav-bar>
+        </span>
+        <span class="tabbar" style="flex:1">
+            <i class="loader fa fa-spinner fa-spin"></i>
+            <toggle ng-model="website.isNight" ng-change="website.updateCSS()" toggle-class="slider"></toggle>
+        </span>
+    </div>
+    <div ng-view></div>
+</body>
+</html>

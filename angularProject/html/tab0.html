@@ -1,0 +1,15 @@
+<div ng-controller="ctrl0" style="display:flex; min-height:550px">
+    <table ng-hide="cal.shownSnack" style="display:inline-table; vertical-align:top" class="table border="1">
+        <th ng-class="cal.headerWidth(x)" ng-repeat="x in cal.calendarKeys">{{cal.formatHeader(x)}}</th>
+        <tr ng-repeat="obj in cal.calendar">
+            <td
+                    ng-class="cal.highlightDate(obj[colName])"
+                    ng-blur="cal.editRow((cal.index+$parent.$index), colName, $event)"
+                    contenteditable="{{colName.includes('Comment')}}"
+                    ng-repeat="colName in cal.calendarKeys">
+                {{ cal.formatCell(obj, colName) }}
+            </td>
+        </tr>
+    </table>
+    <div ng-show="cal.shownSnack" class="snackbar">{{cal.snack}}</div>
+</div>

@@ -1,0 +1,71 @@
+body {font-family: Arial}
+
+.header-month {width:60px; cursor:default}
+.header-date {width:26px; cursor:default}
+
+.dayMode .navbar{
+    background-color: #0070cd;
+}
+
+.navbar-brand{
+    color: #ffffffad;
+}
+
+.navbar-brand:hover {
+  color:white;
+}
+
+.active {
+  color:white
+}
+
+.dayMode .highlight {
+	color:#005499;
+}
+
+.nightMode .highlight {
+    color:yellow;
+}
+
+.nightMode {
+    color:white;
+}
+
+.highlight {
+	font-weight:700;
+}
+
+.myRadio label {
+  padding:1%
+}
+
+.calendar {
+    width: 99%;
+    max-width: 99%;
+    text-align:center;
+    table-layout: fixed;
+}
+
+.calendar>tbody>tr>td,.calendar>tfoot>tr>td,.calendar>thead>tr>td {
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    word-wrap:break-word;
+    height:60px
+}
+
+.myTable {
+    width:600px;
+}
+
+.monthName {
+    position: fixed;
+    z-index: 1;
+    left: 40%;
+    bottom: 50%;
+    font-size: 55px;
+}
+
+.loader {
+padding:10%;
+}

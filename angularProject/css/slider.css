@@ -1,0 +1,13 @@
+.toggle.slider, .toggle-on.slider, .toggle-off.slider {
+    border-radius: 20px;
+    width: 25%!important;
+    height: 50%!important;
+    margin-top: 5%;
+    /* margin-left: 42%; */
+    float: right;
+    margin-right: 10%;
+}
+
+ .toggle.slider .toggle-handle {
+    border-radius: 20px;
+}
