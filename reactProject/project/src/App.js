@@ -29,6 +29,7 @@ class App extends Component {
     ws.onmessage = this.onmessage.bind(this);
     ws.onopen = this.onopen.bind(this);
     ws.onclose = this.onclose.bind(this);
+    // eslint-disable-next-line
     this.state.ws=ws;
   }
 

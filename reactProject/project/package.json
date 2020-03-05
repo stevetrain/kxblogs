@@ -1,20 +1,27 @@
 {
-  "name": "project",
+  "name": "dev-project",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
-    "bootstrap": "^4.0.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-scripts": "1.1.4",
-    "reactstrap": "^6.3.1",
-    "react-contenteditable": "^3.2.6",
-    "react-router-dom": "^4.3.1"
+    "bootstrap": "^4.3.1",
+    "npm-check-updates": "^4.0.4",
+    "react": "^16.13.0",
+    "react-contenteditable": "^3.3.3",
+    "react-dev-tools": "0.0.1",
+    "react-dom": "^16.13.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "reactstrap": "^8.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version"
+    ]
   }
 }
