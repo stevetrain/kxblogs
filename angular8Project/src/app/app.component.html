@@ -1,0 +1,24 @@
+<div>
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark">
+    <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
+    <links>
+      <nav>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a routerLink="/cal" routerLinkActive="active cl" class="nav-link waves-light" mdbWavesEffect>{{this.tabNames[0]}}<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/otherTab" routerLinkActive="active" class="nav-link waves-light" mdbWavesEffect>{{this.tabNames[1]}}</a>
+          </li>
+        </ul>
+      </nav>
+        <span class="nav-extra">
+          <i *ngIf="this.loading" class="loader fa fa-5x fa-spinner fa-spin"></i>
+        </span>
+        <span class="nav-extra">
+          <mat-slide-toggle [(ngModel)]="isNight" (change)="updateCSS()"></mat-slide-toggle>
+        </span>
+    </links>
+  </mdb-navbar>
+  <router-outlet (activate)="onOutletLoaded($event)"></router-outlet>
+</div>

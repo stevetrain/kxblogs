@@ -1,0 +1,19 @@
+::ng-deep body {overflow:hidden}
+
+::ng-deep .nightMode {background-color: #1b1b1b; color:white}
+
+::ng-deep .dayMode .navbar{background-color: #0070cd; color:black}
+
+:host ::ng-deep .nightMode .navbar {background-color: #1b1b1b}
+
+.navbar-brand{width:0px; visibility:hidden}
+
+.nav-extra {}
+
+::ng-deep .navbar.navbar-dark .navbar-nav .nav-item>.nav-link.active {
+  background-color: rgba(255,255,255,.1)!important;
+}
+
+::ng-deep .navbar.navbar-dark .navbar-nav .nav-item>.nav-link {background-color:unset!important}
+
+.loader {position:absolute; left:50%; top: 600%}

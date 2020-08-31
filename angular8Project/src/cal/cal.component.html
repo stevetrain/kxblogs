@@ -1,0 +1,14 @@
+<div (mousewheel)="wheel($event)">
+  <table *ngIf="!this.shownSnack" style="display:inline-table; vertical-align:top" class="calendar table border='1'">
+    <th *ngFor="let col of calendarKeys;" [ngClass]="headerWidth(col)" >{{this.formatHeader(col)}}</th>
+      <tr *ngFor="let cal of calendar; let i=index;">
+        <td *ngFor="let col of calendarKeys"
+            [ngClass]="highlightDate(cal[col], col)"
+            [attr.contenteditable]="isEditable(col)"
+            (blur)="editRow(this.index+i, col, $event)"
+          >{{this.formatCell(cal,col)}}
+        </td>
+      </tr>
+  </table>
+  <div *ngIf="this.shownSnack" class="snackbar" style="display:flex; min-height:550px">{{this.snack}}</div>
+</div>
