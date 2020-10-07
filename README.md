@@ -1,4 +1,4 @@
-*## Overview
+### Overview
 
 This repo contains templates for Single-Page Applications interfacing with kdb+.
 
