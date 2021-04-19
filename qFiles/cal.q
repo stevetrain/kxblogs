@@ -9,6 +9,7 @@
  select ["j"$index,8] from t
  };
 
+//eg .cal.editRow[271f; "WedComment"; "Provided text"]
 .cal.editRow:{[index; kolName; kolVal]
  index:"j"$index;
  kolName:`$kolName;
