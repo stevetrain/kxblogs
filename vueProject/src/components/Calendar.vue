@@ -22,7 +22,6 @@ export default {
   name: 'Calendar',
   props: {
     calendar: Array,
-    q: Function,
     qPromise: Function,
     ws: Object,
     index: Number,
@@ -38,7 +37,7 @@ export default {
     editRow: function(index, colName, event){
       let text = event.target.innerText;
       index+=this.index;
-      this.qPromise(".cal.editRow",this.q,[index, colName, text]).then(this.postEditRow).catch(this.error)
+      this.qPromise(".cal.editRow",[index, colName, text]).then(this.postEditRow).catch(this.error)
     },
     isEditable: function(colName){
       return colName.includes('Comment')
@@ -78,14 +77,14 @@ export default {
       if(pastDate){return 'highlight'}
       return ''
     },
-	headerWidth: function(colName){
+    headerWidth: function(colName){
       if(colName=="Month"){
         return "header-month"
       }
       if(0<=["Mon","Tue","Wed","Thur","Fri","Sat","Sun"].indexOf(colName)){
         return "header-date"
       }
-	}
+    }
   }
 }
 </script>
@@ -109,7 +108,7 @@ export default {
 .table {
     width: 100%;
     max-width: 100%;
-	text-align:center;
+    text-align:center;
     table-layout: fixed;
 }
 
