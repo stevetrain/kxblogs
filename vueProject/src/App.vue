@@ -14,11 +14,11 @@
 </template>
 
 <script>
-import defineWS from '@/components/composables/defineWebsocket'
-import defineCalendar from '@/components/composables/defineCalendar'
+import defineWS from './components/composables/defineWebsocket'
+import defineCalendar from './components/composables/defineCalendar'
 import TabMenu from 'primevue/tabmenu';
 import ProgressSpinner from 'primevue/progressspinner';
-import Slider from '@/components/Slider.vue';
+import Slider from './components/Slider.vue';
 
 export default {
   name: 'vueProject',
