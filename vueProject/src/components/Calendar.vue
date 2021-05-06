@@ -2,18 +2,18 @@
 <div>
   <div v-if="this.showSnack" class="snackbar">{{this.formatDate(index,startDate)}}</div>
   <table v-else class="table">
-  <thead>
-    <tr>
-       <th v-for="(column,i) in calendarKeys" v-bind:class="this.headerWidth(column)" :key="i">{{formatHeader(column)}}</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr v-for="(row,index) in calendar" :key="index">
-       <td v-bind:contenteditable="isEditable(colName)" v-bind:class="this.highlightDate(calendar[index][colName], colName)" v-on:blur="editRow(index, colName, $event)"
+    <thead>
+      <tr>
+        <th v-for="(column,i) in calendarKeys" v-bind:class="this.headerWidth(column)" :key="i">{{formatHeader(column)}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="(row,index) in calendar" :key="index">
+        <td v-bind:contenteditable="isEditable(colName)" v-bind:class="this.highlightDate(calendar[index][colName], colName)" v-on:blur="editRow(index, colName, $event)"
            v-for="(colName) in calendarKeys" :key="colName">{{this.formatCell(calendar[index],colName)}}</td>
-    </tr>
-   </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
 </div>
 </template>
 
