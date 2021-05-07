@@ -19,9 +19,11 @@ export default function defineWS() {
 
     ws.value.onclose = function(){
       console.log('Websocket closed, will reconnect');
-      activeConnection.value = false;
-      const ws = ref([]);
-      ws.value = defineWS();
+      if(activeConnection.value){
+        activeConnection.value = false;
+        const ws = ref([]);
+        ws.value = defineWS();
+      }
     };
 
     ws.value.onmessage = function(e){
