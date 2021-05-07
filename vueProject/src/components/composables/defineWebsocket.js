@@ -13,7 +13,7 @@ export default function defineWS() {
     ws.value.postQ = {};
 
     ws.value.onopen = function(){
-      console.log('websocket opened');
+      console.log('Websocket opened');
       activeConnection.value = true;
     };
 
