@@ -37,7 +37,7 @@ export default {
     editRow: function(index, colName, event){
       let text = event.target.innerText;
       index+=this.index;
-      this.qPromise(".cal.editRow",[index, colName, text]).then(this.postEditRow).catch(this.error)
+      this.qPromise(".cal.editRow",[index, colName, text])
     },
     isEditable: function(colName){
       return colName.includes('Comment')
