@@ -16,6 +16,7 @@ They were tested on Windows 10, Chrome 81-90, kdb+ v3.6 2019.04.30.
 * https://kx.com/blog/single-page-applications-and-kdb-react/
 * https://kx.com/blog/single-page-applications-and-kdb-angular/
 * https://kx.com/blog/single-page-applications-and-kdb-angularjs/
+* https://kx.com/blog/single-page-applications-and-kdb-vue/
 
 ### Setting Up
 
