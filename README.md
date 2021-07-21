@@ -48,8 +48,7 @@ They were tested on Windows 10, Chrome 81-90, kdb+ v3.6 2019.04.30.
 * Run downloaded startV.bat and startQ.bat files – if you aren’t using C:\q\w64, startQ will require editing
 * View from a browser: http://localhost:8080
 
-### Future templates:
+### Future blogs:
 
-* Ember
-* Polymer
-* Svelte
+* AWS lambda with react
+* Cypress
