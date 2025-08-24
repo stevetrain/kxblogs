@@ -14,6 +14,9 @@ They were tested on Windows 10, Chrome 81-90, kdb+ v3.6 2019.04.30.
 ### Blog Posts
 
 * https://kx.com/blog/single-page-applications-and-kdb-react/
+
+Seems like these have been deleted - oh well, they're all outdated anyway
+
 * https://kx.com/blog/single-page-applications-and-kdb-angular/
 * https://kx.com/blog/single-page-applications-and-kdb-angularjs/
 * https://kx.com/blog/single-page-applications-and-kdb-vue/
@@ -47,8 +50,3 @@ They were tested on Windows 10, Chrome 81-90, kdb+ v3.6 2019.04.30.
 * Run npm update in the terminal from the vueProject directory, to install dependencies from package.json (bringing the project size to around 130MB)
 * Run downloaded startV.bat and startQ.bat files – if you aren’t using C:\q\w64, startQ will require editing
 * View from a browser: http://localhost:8080
-
-### Future blogs:
-
-* AWS lambda with react
-* Cypress
